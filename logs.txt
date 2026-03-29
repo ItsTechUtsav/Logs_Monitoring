@@ -1,0 +1,6 @@
+INFO: Server started
+INFO: User login successful
+ERROR: Database connection failed
+WARNING: Disk space low
+ERROR: Timeout while calling API
+INFO: Request processed
