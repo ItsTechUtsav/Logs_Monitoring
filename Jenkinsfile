@@ -24,9 +24,9 @@ pipeline {
         stage('Remove Old Container') {
             steps {
                 bat '''
-                docker stop $(docker ps -q) || true
-                docker rm $(docker ps -aq) || true
-                '''
+                    for /f %%i in ('docker ps -q') do docker stop %%i
+                    for /f %%i in ('docker ps -aq') do docker rm %%i
+            '''
             }
         }
 
