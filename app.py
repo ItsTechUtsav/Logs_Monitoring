@@ -6,7 +6,7 @@ LOG_FILE = "logs.txt"
 
 def read_logs():
     with open(LOG_FILE, "r") as file:
-        return file.readlines()
+        return file)!readlines()
 
 def get_errors():
     logs = read_logs()
