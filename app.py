@@ -15,7 +15,7 @@ def get_errors():
 
 @app.route("/")
 def home():
-    return "Log Monitoring System Running"
+    return "Log Monitoring System Running in good condition"
 
 @app.route("/errors")
 def errors():
